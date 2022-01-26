@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Prueba Carrusel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            
+            #cuerpo_principal{
+                width: 900px;
+                margin: auto;
+                background: linear-gradient(to left top, #BC9F00, #4F6D06);
+                border: 1px solid #000000;                
+            }
+            h1{
+                color: #AEF965;
+                text-align: center;
+                text-shadow: -4px 4px 3px #EDD400, -6px 6px 1px #0900ED, -8px 8px 3px #CC0000;
+            }
+            #texto_mineral{
+                width: 448px;
+                border: 1px solid #CC0000;
+                float: right;
+            }
+            #foto_principal{
+                width: 448px;
+                object-fit: cover;
+                border: 1px solid #4E9A06;
+            }
+            #fotos_carrusel{
+                clear: both;
+                background: linear-gradient(to top, red,blue);
+            }
+            #fotos_carrusel img{
+                /*width: 200px;*/
+                height: 100px;
+                border: 1px solid #EDD400;
+                transition-property: h,w;
+                transition-duration: 1s, 500ms;
+                transition-timing-function: linear;
+                transition-delay: 0s, 1s;
+                opacity: 0.7;
+            }
+            #fotos_carrusel img:hover{
+                /*width: 300px;*/
+                height: 200px;
+                opacity: 1;
+                cursor: pointer;
+            }
+            
+        </style>
+        
+        <script>
+        function comenzar(){
+            elem_destino=document.getElementById("foto_principal");
+            elem_destino=elemento.getContext("2d");
+            
+            elem_origen=document.getElementById("fotos_carrusel");
+            elem_origen=elemento1.getContext("2d");
+            
+            elem_origen.addEventListener("click", moviendo, false);
+            elem_destino.addEventListener("click", soltando, false);
+            
+            function moviendo(e){
+                
+            }
+            function soltando(e){
+                
+            }
+                        
+            
+            /*elem_origen.addEventListener("dragstart", moviendo, false);
+            elem_destino.addEventListener("drop", soltando, false);
+            elem_destino.addEventListener("dragend", terminado, false);
+            
+            function moviendo(e){
+                codigo="<img src'" + elem_origen.getAttribute("src") + "'>";
+                e.dataTransfer.setData("Text",codigo);
+            }
+            function soltando(e){
+                e.preventDefault();
+                elem_destino.innerHTML=e.dataTransfer.getData("Text");
+            }
+            function terminado(e){
+                var elemento=e.target;
+                elemento.style.visibility="hidden";
+            }*/
+            
+            /* lienzo.font="bold, 20px, verdana";
+            lienzo.save();
+            lienzo.fillText("Hola Alumnos",50,50);
+            lienzo.translate(60,50);
+            lienzo.rotate(Math.PI/180*55);
+            lienzo.fillText("Hola Alumnos",0,0);
+            //lienzo.rotate(-Math.PI/180*55);
+            lienzo.restore();
+            lienzo.translate(300,400);
+            lienzo.scale(2,2);
+            lienzo.fillText("Hola Alumno",0,0); */            
+        }    
+            
+            window.addEventListener("load", comenzar, false);
+        </script>
+                
+    </head>
+    <body id="cuerpo_principal">
+        <div>
+            <h1>Prueba de Carrusel</h1>
+        </div>
+        <div id="texto_mineral">
+            <span id="nombre_mineral"><strong>Atacamita</strong></span>
+            <span id="clasifi"> Halogenuros</span> <br>
+            <span id="formula">Cu<sub>2</sub>(OH)<sub>3</sub>Cl</span> <br>
+        <strong>Dureza:</strong> 3 a 3,5. <br>
+        <strong>Raya:</strong> verde manzana.<br>
+        <strong>Color:</strong> verde, verde oscuro, verde negruzco.<br>
+        <strong>Transparencia:</strong> translúcido a transparente.<br>
+        <strong>Brillo:</strong> vítreo a adamantino.<br>
+        <strong>Exfoliación:</strong> buena según (010).  <br>
+        <strong>Fractura:</strong> concoidea.<br>
+        <strong>Morfología:</strong> cristales aciculares, tabulares, agregados esféricos y fibrosos.<br>
+        <strong>Densidad:</strong> 3,76. <br>
+        <strong>Sistema cristalino:</strong> ortorrómbico.  <br>
+        <strong>Forma de los cristales:</strong> prismáticos, tabulares, raramente pseudooctaédricos, isométricos.  <br>
+        <strong>Composición química:</strong> Cu 59,51%, Cl 16,60%, O 11,24%, H<sub>2</sub>O 12,65%.  <br>
+        <strong>Propiedades:</strong> fácilmente soluble en ácidos y amoniaco, funde sobre carbón y colorea la llama de azul.  <br>
+        <strong>Manipulaciones:</strong> limpiar con agua.  <br>
+        <strong>Minerales parecidos:</strong> malaquita, olivenita.  <br>
+        <strong>Diferencias:</strong> con la olivenita, sobre carbón da aureola blanca de As<sub>2</sub>O<sub>3</sub>; con la malaquita, a la llama reductora da partículas de cobre, reacciones químicas y rayos X.  <br>
+        <strong>Génesis:</strong> secundaria, en fumarolas.<br>
+        <strong>Paragénesis:</strong> cobre, cuprita, malaquita, limonita.  <br>
+        <strong>Usos:</strong> mena de Cu. <br>
+        </div>
+        
+        <div id="foto_principal">
+            <img src="../Atacamita/imagenes/IMG_5599.JPG" alt="Atacamita" width="448">
+        </div>
+            <div id="fotos_carrusel">
+                <!-- Foto 1 -->
+                <img src="../Atacamita/imagenes/IMG_5599.JPG" alt="Atacamita"  height="100">
+                <!-- Foto 2 -->                
+                <img src="../Atacamita/imagenes/IMG_5601.JPG" alt="Atacamita"  height="100">
+                <!-- Foto 3 -->
+                <img src="../Atacamita/imagenes/IMG_5602.JPG" alt="Atacamita"  height="100">
+                <!-- Foto 4 -->
+                <img src="../Atacamita/imagenes/IMG_9889.JPG" alt="Atacamita"  height="100">
+                <!-- Foto 5 -->
+                <!-- <img src="../Atacamita/imagenes/IMG_9893.JPG" alt="Atacamita"  height="100">
+                Foto 6 
+                <img src="../Atacamita/imagenes/IMG_9894.JPG" alt="Atacamita" height="100">
+                Foto 7 
+                <img src="../Atacamita/imagenes/IMG_9900.JPG" alt="Atacamita"  height="100">
+                Foto 8 
+                <img src="../Atacamita/imagenes/IMG_9901.JPG" alt="Atacamita"  height="100">
+                Foto 9 
+                <img src="../Atacamita/imagenes/IMG_9902.JPG" alt="Atacamita"  height="100">
+                Foto 10 
+                <img src="../Atacamita/imagenes/Z_IMG_6542.JPG" alt="Atacamita"  height="100">
+                Foto 11
+                <img src="../Atacamita/imagenes/Z_IMG_6545.JPG" alt="Atacamita"  height="100">
+                Foto 12 
+                <img src="../Atacamita/imagenes/Z_IMG_6547.JPG" alt="Atacamita" height="100">
+                Foto 13 
+                <img src="../Atacamita/imagenes/Z_IMG_6551.JPG" alt="Atacamita" height="100">  --> 
+                
+
+            </div>
+        <br> <br> <br> <br>
+    </body>
+</html>

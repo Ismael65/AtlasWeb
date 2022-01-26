@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Inicio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            #cuerpo{
+                width: 600px;
+                margin: auto;
+            }            
+            h1{
+                font-weight: bold;
+                color: #CC0000;
+                text-align: center;
+            }
+            h2{
+               font-weight: bold;
+                color: #CC0000;
+                text-align: center; 
+            }
+            img{
+                margin: auto;
+                margin-top: 20px;
+                margin-left: 150px;
+                    
+            }
+            
+            
+            #navegador{
+                background-color: #8F5C8F;
+                padding: 0.5em; 
+            }
+            #navegador li{
+                margin: 0px 2px;
+                padding: 0.1em 1em 0.5em 1em; 
+                background-color: #9933cc;
+                width: 10%;
+                float: left;
+                list-style-type: none;
+                position: relative; 
+            }
+            #subseccion1, #subseccion2, #subseccion3, #subseccion4{
+                position: absolute;
+                top: 100%;
+                left: 0px;  
+                background-color: #41338b;
+                font:normal 0.8em arial;  
+                padding: 0.2em 0.5em ;
+                display: none; 
+            }
+#navegador li:hover { background-color: #990033; }
+#navegador li a:link, #navegador li a:visited { 
+           color: #feffe4; text-decoration: none; }
+#navegador li a:hover, #navegador li a:active { 
+           color:#ffd7a9 ; text-decoration: none; }
+.borrar { clear: both; }
+            
+        </style>
+        <script type="text/javascript">
+        function ver(n) {
+            document.getElementById("subseccion"+n).style.display="block"
+        }
+        function ocultar(n) {
+            document.getElementById("subseccion"+n).style.display="none"
+        }
+        </script>
+    </head>
+    <body id="cuerpo">
+        <div>
+            <h1>PAGINA INICIO</h1>
+            <h2>Pagina en construccion</h2>            
+        </div>
+        
+        <div id="navegador">
+            <ul>
+                <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+                    <a href="#">A</a>
+                    <div id="subseccion1">
+                        <p><a href="#">Atacamita</a></p>
+                        <p><a href="#">Andesita</a></p>
+                        <p><a href="#">Apatito</a></p>
+                        <p><a href="#"></a></p> 
+                    </div>
+                </li>
+                <li id="seccion2"  onmouseover="ver(2)" onmouseout="ocultar(2)">
+                    <a href="#">B</a>
+                    <div id="subseccion2">
+                        <p><a href="#">Barita</a></p>
+                        <p><a href="#">Berilo</a></p>
+                        <p><a href="#">Biotita</a></p>
+                    </div>			
+                </li>
+                <li id="seccion3" onmouseover="ver(3)" onmouseout="ocultar(3)">
+                    <a href="#">C</a>
+                    <div id="subseccion3">
+                        <p><a href="#">Calcita</a></p>
+                        <p><a href="#">Casiterita</a></p>
+                        <p><a href="#">Cuarzo</a></p>
+                        <p><a href="#"></a></p>
+                        <p><a href="#"></a></p>
+                    </div>	
+                </li>
+                <li id="seccion4" onmouseover="ver(4)" onmouseout="ocultar(4)">
+                    <a href="#">D</a> 
+                    <div id="subseccion4">
+                        <p><a href="#">Dickita</a></p>
+                        <p><a href="#">Dolomita</a></p>
+                        <p><a href="#">Diamante</a></p>
+                    </div>
+                </li>
+            </ul>
+                
+            <div class="borrar"></div>
+            </div>
+            
+        
+        <img src="imagenes/Diablo10.png" alt="Diablo de Yare" width="300"/>
+        
+        
+        
+    </body>
+</html>
